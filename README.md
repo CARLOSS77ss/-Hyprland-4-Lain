@@ -39,7 +39,7 @@ _Replace with your actual wallpaper file name_
    git clone https://github.com/CARLOSS77ss/Hyprland-4-Lain.git
 
    
-   📦 Dependencies
+📦 Dependencies :
 
 Make sure these packages are installed:
 
