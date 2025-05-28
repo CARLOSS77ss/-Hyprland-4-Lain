@@ -25,7 +25,7 @@ This repository contains all my Hyprland-related configuration files, including:
 
 > Include a screenshot of your setup or your wallpaper here:
 
-![preview](wallpapers/your_wallpaper_filename.jpg)  
+![preview](/screenshot.png)  
 _Replace with your actual wallpaper file name_
 
 ---
