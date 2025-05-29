@@ -2,7 +2,7 @@
 
 A minimal and personal Hyprland setup for EndeavourOS, themed and customized for a smooth and aesthetic workflow.
 
-![preview](/Lain.jpg)
+<img src="/Lain.jpg" width="300px" style="margin-left: 20px;"/>
 
 ---
 
