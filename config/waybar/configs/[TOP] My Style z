@@ -1,0 +1,152 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  //"spacing": 4,
+  //"height": 30, // (Remove for auto height)
+  // Modules
+  "modules-left": [
+    "custom/useless",
+    "sway/workspaces",
+    "sway/mode"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "wireplumber",
+    "custom/mic",
+    "custom/mako",
+    "custom/todo",
+    "network",
+    "custom/swayidle",
+    "custom/power"
+  ],
+  // Modules configuration
+  "sway/workspaces": {
+    "disable-scroll": true
+  },
+  "battery": {
+    "bat": "BAT0",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "max-length": 25
+  },
+  "sway/window": {
+    "max-length": 80
+  },
+  "cpu": {
+    "format": "CPU: {usage}%",
+    "tooltip": false,
+    "on-click": "$TERMINAL -a floatterm -e htop",
+    "on-click-right": "~/.config/waybar/custom/usage.sh cpu"
+  },
+  "memory": {
+    "format": "RAM: {used:0.1f}GB",
+    "tooltip": false,
+    "on-click": "$TERMINAL -a floatterm -e htop",
+    "on-click-right": "~/.config/waybar/custom/usage.sh ram"
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format-wifi": "({signalStrength}%) ",
+    "format-ethernet": "󰈀",
+    "tooltip-format": "{ipaddr}\n<b>up:</b> {bandwidthUpBytes} <b>down:</b> {bandwidthDownBytes}",
+    "format-linked": "{ifname} (No IP) ?",
+    "format-disconnected": "No connection",
+    "on-click": "networkmanager_dmenu",
+    "on-click-right": "$TERMINAL -a floatterm -e nethogs"
+  },
+  "wireplumber": {
+    "format": "{icon}",
+    "format-muted": "",
+    "format-icons": [
+      "",
+      " "
+    ],
+    "on-click-right": "pavucontrol",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  },
+  "clock": {
+    "format": "{:%b %d %H:%M}",
+    "on-click-middle": "~/.local/bin/noti_weather",
+    "tooltip-format": "<span color='#FFFFFF'><tt>{calendar}</tt></span>",
+    "calendar": {
+      "mode-mon-col": 4,
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#BE95FF'><b>{}</b></span>",
+        "weeks": "<span color='#525252'><b>{}</b></span>",
+        "weekdays": "<span color='#78A9FF'><b>{}</b></span>",
+        "today": "<span color='#BE95FF' background='#161616'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    },
+    "tooltip": true
+  },
+  "custom/power": {
+    "interval": "once",
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/.local/bin/bemenu_power"
+  },
+  "custom/swayidle": {
+    "interval": "once",
+    "return-type": "json",
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/swayidle.sh",
+    "signal": 1,
+    "on-click": "~/.config/sway/scripts/swayidle-toggle.sh; pkill -RTMIN+1 waybar"
+  },
+  "custom/mako": {
+    "interval": "once",
+    "return-type": "json",
+    "format": "{}{icon}",
+    "format-icons": {
+      "default": "󰂚",
+      "dnd": "󰂛"
+    },
+    "on-click": "makoctl mode | grep 'dnd' && makoctl mode -r dnd || makoctl mode -a dnd; pkill -RTMIN+7 waybar",
+    "exec": "printf '{\"alt\":\"%s\",\"tooltip\":\"mode: %s\"}' $(makoctl mode | grep -q 'dnd' && echo dnd || echo default) $(makoctl mode | tail -1)",
+    "signal": 7
+  },
+  "custom/todo": {
+    "exec": "~/.config/waybar/scripts/todo.sh",
+    "return-type": "json",
+    "format": "󰅍",
+    "on-click": "$TERMINAL -a floatterm -e nvim $HOME/Documents/personal/notes/todo.md",
+    "interval": "once"
+  },
+  "custom/useless": {
+    "interval": "once",
+    "format": "  ",
+    "tooltip-format": " left or  + D opens app-menu\n middle checks updates\n right or  + F12 opens setting-menu",
+    "on-click": "j4-dmenu-desktop --dmenu='bemenu_runner -B1 -n -l10 -p drun:'",
+    "on-click-right": "~/.config/sway/scripts/dot-settings.sh",
+    "on-click-middle": "$TERMINAL -a floatterm -e ~/.local/bin/popupgrade"
+  },
+  "custom/mic": {
+    "exec": "~/.config/waybar/scripts/mic.sh",
+    "interval": "once",
+    "format": "{}",
+    "tooltip": false,
+    "signal": 2,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_SOURCE@ toggle"
+  }
+}
