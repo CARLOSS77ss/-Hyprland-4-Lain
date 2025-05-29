@@ -1,6 +1,6 @@
 # Hyprland 4 Lain – Dotfiles
 
-A minimal and personal Hyprland setup for Arch Linux, themed and customized for a smooth and aesthetic workflow.
+A minimal and personal Hyprland setup for EndeavourOS, themed and customized for a smooth and aesthetic workflow.
 
 ---
 
@@ -21,13 +21,12 @@ This repository contains all my Hyprland-related configuration files, including:
 - Wallpaper and styling assets
 
 ---
-## 🖼️ Preview
 
-> Include a screenshot of my setup wallpaper here:
+## 🌌 Screenshot :3
+
+> Include a screenshot of my setup here:
 
 ![preview](/screenshot.png)  
-
-## And
 
 ![preview](/screenshot1.png)  
 
@@ -35,16 +34,17 @@ This repository contains all my Hyprland-related configuration files, including:
 
 ## 🚀 Setup Instructions
 
-> Recommended for Arch Linux + Hyprland users
+> Recommended for EndeavourOS + Hyprland users
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/CARLOSS77ss/Hyprland-4-Lain.git
-
    
-📦 Dependencies :
+---
 
-Make sure these packages are installed:
+## 📦 Dependencies :
+
+> Make sure these packages are installed:
 
     hyprland
 
@@ -67,19 +67,11 @@ Make sure these packages are installed:
     feh or swww (for setting wallpaper)
 
     kvantum-qt5, qt5ct, qt6ct
-
-    noto-fonts, noto-fonts-cjk, noto-fonts-emoji or your preferred Nerd Font
----
-  This setup is tailored to my personal screen layout and preferences.
-
-  You may need to adjust monitor names, font sizes, wallpaper path, and theme settings.
-
-  Some configs reference personal scripts or paths (e.g., /home/carloss77/).
+    
 ---
 
-
-💻 Credits
+## 💻 Credits
 
 Inspired by the Arch/Hyprland rice community and Lain aesthetic themes.
-
+All credit goes to 
     
