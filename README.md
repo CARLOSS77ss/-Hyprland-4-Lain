@@ -1,4 +1,4 @@
-# Hyprland 4 Lain – Dotfiles
+#  "💮🌸 Hyprland4Lain – Dotfiles Minimalistic look 🌸💮"
 
 A minimal and personal Hyprland setup for EndeavourOS, themed and customized for a smooth and aesthetic workflow.
 
@@ -73,5 +73,5 @@ This repository contains all my Hyprland-related configuration files, including:
 ## 💻 Credits
 
 Inspired by the Arch/Hyprland rice community and Lain aesthetic themes.
-All credit goes to https://github.com/JaKooLit
+All credit goes to JaKooLit
     
