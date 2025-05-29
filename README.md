@@ -1,4 +1,4 @@
-#  "💮🌸 Hyprland4Lain – Dotfiles Minimalistic look 🌸💮"
+#   💮🌸 Hyprland4Lain – Dotfiles let's all love Lain 🌸💮
 
 A minimal and personal Hyprland setup for EndeavourOS, themed and customized for a smooth and aesthetic workflow.
 
