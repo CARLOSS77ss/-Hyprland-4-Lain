@@ -2,7 +2,7 @@
 
 A minimal and personal Hyprland setup for EndeavourOS, themed and customized for a smooth and aesthetic workflow.
 
-<img src="/Lain.jpg" width="300px" style="margin-left: 20px;"/>
+<img src="/Assist/lain.png" width="300px" style="margin-left: 20px;"/>
 
 ---
 
@@ -28,9 +28,11 @@ This repository contains all my Hyprland-related configuration files, including:
 
 > Include a screenshot of my setup here:
 
-![preview](/screenshot.png)  
+![preview](/Assist/screenshot.png)  
 
-![preview](/screenshot1.png)  
+![preview](/Assist/screenshot1.png)
+
+![preview](/Assist/SDDM.png)  
 
 ---
 
