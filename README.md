@@ -73,5 +73,5 @@ This repository contains all my Hyprland-related configuration files, including:
 ## 💻 Credits
 
 Inspired by the Arch/Hyprland rice community and Lain aesthetic themes.
-All credit goes to 
+All credit goes to https://github.com/JaKooLit
     
