@@ -2,6 +2,7 @@
 
 A minimal and personal Hyprland setup for EndeavourOS, themed and customized for a smooth and aesthetic workflow.
 
+![GitHub Repo stars]
 ---
 
 ## 🎯 Overview
